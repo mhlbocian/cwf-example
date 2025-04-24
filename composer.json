@@ -1,0 +1,27 @@
+{
+    "name": "mhlbocian/cwf-example",
+    "description": "CWF-PHP Example application",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/mhlbocian/cwf-php"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Mhlbocian\\CwfExample\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Michał Bocian",
+            "email": "bocian.michal@outlook.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "mhlbocian/cwf-php": "@dev"
+    }
+}
