@@ -2,12 +2,12 @@
 
 namespace Mhlbocian\CwfExample\Controllers;
 
+use CwfPhp\CwfPhp\Auth;
+use CwfPhp\CwfPhp\Config;
+use CwfPhp\CwfPhp\Router;
+use CwfPhp\CwfPhp\Url;
+use CwfPhp\CwfPhp\View;
 use Mhlbocian\CwfExample\Models\Sitemap;
-use Mhlbocian\CwfPhp\Auth;
-use Mhlbocian\CwfPhp\Config;
-use Mhlbocian\CwfPhp\Router;
-use Mhlbocian\CwfPhp\Url;
-use Mhlbocian\CwfPhp\View;
 
 class Main {
 
@@ -30,6 +30,15 @@ class Main {
         }
 
         $this->main->Bind("menu", $menu);
+    }
+    
+    public function Auth(): void {
+        $view = new View("Main/Auth");
+
+        $view->Bind("users", Auth::Instance()->UserFetch());
+        $view->Bind("groups", Auth::Instance()->GroupFetch());
+        $view->Bind("status", Router::Get_Args()[0] ?? null);
+        $this->main->Bind("content", $view);
     }
 
     public function Index(): void {
@@ -72,21 +81,6 @@ class Main {
             }
         }
 
-        $this->main->Bind("content", $view);
-    }
-
-    public function Usage(): void {
-        $view = new View("Main/Usage");
-
-        $this->main->Bind("content", $view);
-    }
-
-    public function Auth(): void {
-        $view = new View("Main/Auth");
-
-        $view->Bind("users", Auth::Instance()->UserFetch());
-        $view->Bind("groups", Auth::Instance()->GroupFetch());
-        $view->Bind("status", Router::Get_Args()[0] ?? null);
         $this->main->Bind("content", $view);
     }
 

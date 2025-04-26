@@ -2,9 +2,9 @@
 
 namespace Mhlbocian\CwfExample\Controllers;
 
-use Mhlbocian\CwfPhp\Auth;
-use Mhlbocian\CwfPhp\Auth\Status;
-use Mhlbocian\CwfPhp\Url;
+use CwfPhp\CwfPhp\Auth;
+use CwfPhp\CwfPhp\Auth\Status;
+use CwfPhp\CwfPhp\Url;
 
 class Forms
 {

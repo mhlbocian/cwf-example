@@ -1,4 +1,4 @@
-<?php use Mhlbocian\CwfPhp\{Auth, Url}; ?>
+<?php use CwfPhp\CwfPhp\{Auth, Url}; ?>
 <?php $auth = Auth::Instance(); ?>
 <h3>Users</h3>
 <ul>

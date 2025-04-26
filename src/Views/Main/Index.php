@@ -1,4 +1,4 @@
-<?php use Mhlbocian\CwfPhp\Url; ?>
+<?php use CwfPhp\CwfPhp\Url; ?>
 <h3>Main Page</h3>
 <p>This project is a lightweight web framework built with PHP, designed with
     simplicity and ease of use at its core. Unlike complex and heavy frameworks that

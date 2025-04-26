@@ -9,20 +9,26 @@
  * License: 3-Clause BSD
  */
 
-require_once '../bootstrap.php';
+require_once __DIR__ . "/../../vendor/autoload.php";
 
-use Mhlbocian\CwfPhp\Router;
-use Mhlbocian\CwfPhp\Exceptions\Router_Exception;
-use Mhlbocian\CwfPhp\Url;
+use CwfPhp\CwfPhp\Exceptions\Router_Exception;
+use CwfPhp\CwfPhp\Framework;
+use CwfPhp\CwfPhp\Router;
+use CwfPhp\CwfPhp\View;
 
-// TODO: Filter PATH_INFO only for alphanumeric and slash chars
-// [!] NOW IT'S VERY UNSAFE AND USED ONLY FOR EARLY DEVELOPMENT
-
-$router = new Router($_SERVER["PATH_INFO"] ?? null);
+Framework::Setup(__DIR__ . "/..");
 
 try {
-    $router->Execute();
+    // parse route and execute it
+    new Router($_SERVER["PATH_INFO"] ?? null)->Execute();
 } catch (Router_Exception $ex) {
-// action for invalid route
-    Url::Redirect();
+    // action, when controller/action is not found
+    echo new View("Error")
+            ->Bind("type", "404 - Page not found")
+            ->Bind("error", $ex->getMessage());
+} catch (Throwable $ex) {
+    // action for other errors
+    echo new View("Error")
+            ->Bind("type", "Internal error (" . $ex::class . ")")
+            ->Bind("error", $ex->getMessage() . "<br />" . $ex->getTraceAsString());
 }

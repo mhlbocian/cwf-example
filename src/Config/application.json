@@ -1,8 +1,8 @@
 {
     "application": {
         "name": "CWF-PHP",
-        "description": "CWF-PHP Framework",
-        "version": "0.82"
+        "description": "Example application",
+        "version": "0.83.0"
     },
     "router": {
         "namespace": "Mhlbocian\\CwfExample\\Controllers",

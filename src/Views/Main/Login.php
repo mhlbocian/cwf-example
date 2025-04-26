@@ -1,4 +1,4 @@
-<?php use Mhlbocian\CwfPhp\Url; ?>
+<?php use CwfPhp\CwfPhp\Url; ?>
 <h3>Log in user</h3>
 <p>Remember to create a user account first, if you have an empty database.</p>
 <form action="<?= Url::Site("/Forms/Login") ?>" method="post">

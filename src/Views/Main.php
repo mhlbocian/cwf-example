@@ -1,4 +1,4 @@
-<?php use Mhlbocian\CwfPhp\{Core, Url}; ?>
+<?php use CwfPhp\CwfPhp\Url; ?>
 <!DOCTYPE html>
 <html>
 
@@ -13,10 +13,10 @@
 <body>
     <div id="page-container">
         <header>
-            <h1>CWF-PHP Framework</h1>
+            <h1>CWF-PHP - <?= $app["description"] ?></h1>
         </header>
         <hr />
-        <nav>
+        <nav style="text-align: center;">
             <ul>
                 <?php foreach ($menu as $item): ?>
                     <?php if (!is_null($item["url"])): ?>

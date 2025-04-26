@@ -1,4 +1,4 @@
-<?php use Mhlbocian\CwfPhp\Url; ?>
+<?php use CwfPhp\CwfPhp\Url; ?>
 <div style="width: 25%; float: left;">
     <h3>Framework manual</h3>
     <ul style="list-style: none; padding-left: 0;">

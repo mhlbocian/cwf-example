@@ -2,7 +2,7 @@
 
 namespace Mhlbocian\CwfExample\Models;
 
-use Mhlbocian\CwfPhp\Url;
+use CwfPhp\CwfPhp\Url;
 
 class Sitemap {
 
@@ -10,14 +10,20 @@ class Sitemap {
         "Main" => [
             "Index" => "Main page",
             "License" => "License",
-            "Usage" => "Usage",
             "Manual" => "Manual",
             "Auth" => "Authentication",
             "Login" => "Sign in"
         ],
     ];
     private static array $api_menu = [
-        "Authentication" => [
+        "Framework" => [
+            "Basics" => "Framework_Basics",
+            "Environment" => "Framework_Environment",
+            "Routing" => "Framework_Routing",
+            "URL" => "Framework_Url",
+            "Views" => "Framework_Views"
+        ],
+        "Auth API" => [
             "Configuration" => "Auth_Configuration",
             "Database driver" => "Auth_DriverDb",
             "JSON driver" => "Auth_DriverJson",
@@ -35,11 +41,6 @@ class Sitemap {
             "Configuration" => "Database_Config",
             "Connections" => "Database_Connections",
             "Queries" => "Database_Queries"
-        ],
-        "Framework" => [
-            "Routing" => "Framework_Routing",
-            "URL" => "Framework_Url",
-            "Views" => "Framework_Views"
         ]
     ];
 
@@ -95,6 +96,6 @@ class Sitemap {
     public static function Title(string $current_page): string {
         $ca_arr = explode("/", $current_page);
 
-        return self::$main_menu[$ca_arr[0]][$ca_arr[1]] ?? "";
+        return self::$main_menu[$ca_arr[1]][$ca_arr[2]] ?? "";
     }
 }
