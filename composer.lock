@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "cwf-php/cwf-php",
-            "version": "0.83.0",
+            "version": "0.83.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mhlbocian/cwf-php.git",
-                "reference": "9be26536bbed737f8c68fd7055b12837ef2a62c9"
+                "reference": "f28098ccb70d94980fdba0063a78dd8832544f56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mhlbocian/cwf-php/zipball/9be26536bbed737f8c68fd7055b12837ef2a62c9",
-                "reference": "9be26536bbed737f8c68fd7055b12837ef2a62c9",
+                "url": "https://api.github.com/repos/mhlbocian/cwf-php/zipball/f28098ccb70d94980fdba0063a78dd8832544f56",
+                "reference": "f28098ccb70d94980fdba0063a78dd8832544f56",
                 "shasum": ""
             },
             "require": {
@@ -45,11 +45,18 @@
             ],
             "description": "CWF-PHP Framework",
             "homepage": "https://github.com/mhlbocian/cwf-php",
+            "keywords": [
+                "Authentication",
+                "database",
+                "easy-to-learn",
+                "framework",
+                "mvc"
+            ],
             "support": {
                 "issues": "https://github.com/mhlbocian/cwf-php/issues",
-                "source": "https://github.com/mhlbocian/cwf-php/tree/0.83.0"
+                "source": "https://github.com/mhlbocian/cwf-php/tree/0.83.1"
             },
-            "time": "2025-04-26T19:42:05+00:00"
+            "time": "2025-04-27T13:13:14+00:00"
         }
     ],
     "packages-dev": [],

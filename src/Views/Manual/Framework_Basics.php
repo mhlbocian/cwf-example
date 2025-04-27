@@ -16,14 +16,19 @@ $ composer require cwf-php/cwf-php
     names for theese directories and files. Additional directories are allowed.
 </p>
 <pre>
-[D] Config                      Application configuration files
-    [.] application.json        CWF main configuration
-[D] Controllers                 Controllers directory
-[D] Data                        Application data directory, like json, sqlite
-[D] Models                      Models directory
-[D] Public                      Public http server directory
-    [.] index.php               Bootstrap app and parse URL route
-[D] Views                       Views directory
+PROJECT ROOT DIRECTORY
+[D] src
+    [D] Config                  application configuration files
+        [.] application.json    CWF main configuration
+    [D] Controllers             
+    [D] Data                    local data (like json, sqlite, files)
+    [D] Models                  
+    [D] Public                  public http server directory
+        [.] index.php           
+    [D] Views
+[D] vendor                      composer packages
+[.] composer.json
+[.] composer.lock                   
 </pre>
 
 <p><b>Classes namespace convention</b></p>
@@ -33,8 +38,8 @@ $ composer require cwf-php/cwf-php
     <code>composer</code>.
 </p>
 <p>
-    Eg. For controller Test, which source is in <code>class Test</code> and the
-    file is located in the <code>Controllers</code> directory, the class
+    E.g. for the controller Test, which source is in <code>class Test</code> and
+    the file is located in the <code>Controllers</code> directory, the class
     <b>must be</b> inside <code>Controllers</code> namespace (followed by your
     project namespace) and the file name <b>must be</b> the same as class name
     (in eg <code>Test.php</code>).
@@ -115,13 +120,14 @@ use CwfPhp\CwfPhp\Exceptions\Router_Exception;
 use CwfPhp\CwfPhp\Framework;
 use CwfPhp\CwfPhp\Router;
 
-Framework::Setup(__DIR__ . "/..");
+Framework::Setup(dirname(__DIR__));
 
 try {
     // parse route and execute it
     new Router(\$_SERVER["PATH_INFO"] ?? null)->Execute();
 } catch (Router_Exception) {
-    // 
+    // you can specify here, what to do, when controller or action does not
+    // exist
 }
 HERE;
 highlight_string($code);

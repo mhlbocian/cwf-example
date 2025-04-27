@@ -16,7 +16,7 @@ use CwfPhp\CwfPhp\Framework;
 use CwfPhp\CwfPhp\Router;
 use CwfPhp\CwfPhp\View;
 
-Framework::Setup(__DIR__ . "/..");
+Framework::Setup(dirname(__DIR__));
 
 try {
     // parse route and execute it

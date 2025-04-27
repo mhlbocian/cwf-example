@@ -25,7 +25,7 @@
 </div>
 <div style="width: 75%; float: right;">
     <?php if (is_null($content)): ?>
-        <p>Please select subpage from the menu on the left side.</p>
+        <p>Please select the subpage from the menu on the left side.</p>
     <?php else: ?>
         <h3><?= $curr_sect ?> &gt; <?= $curr_page ?></h3>
         <?= $content ?>

@@ -6,17 +6,33 @@
     <code>PATH_INFO</code> is provided, default action in default controller is
     executed. When only controller name is available, default action is performed.
 </p>
-<p>You can change router settings in the <code>application.json</code> file in
-    the section "router".</p> You can change theese parameters:
+
+<p>
+    You can change router settings in the <code>application.json</code> file in
+    the section "router".
+</p>
+
+<pre>
+"router": {
+    "namespace": "YourName\\YourProject\\Controllers",
+    "default_controller": "Main",
+    "default_action": "Index"
+}
+</pre>
+
+You can change theese parameters:
+
 <ul>
     <li><code>namespace</code> - controllers namespace</li>
     <li><code>default_controller</code> - default controller name</li>
     <li><code>default_action</code> - default action name</li>
 </ul>
+
 <p>
-    You should not change the <code>namespace</code> key, as is meant all the
-    controllers code should be in the <code>Application\Controllers</code> directory.
+    Remember, to check your <code>namespace</code> key to fit it, to your project
+    namespace.
 </p>
+
 <p>
     When the controller or action does not exist, <code>Router</code> throws
     the <code>Router_Exception</code>. By default, then <code>index.php</code> script

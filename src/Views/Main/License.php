@@ -1,6 +1,6 @@
 <h3>License</h3>
 <pre>
-Copyright 2025 Michał Bocian &lt;bocian.michal@outlook.com&gt;
+Copyright 2025 Michal Bocian &lt;bocian.michal@outlook.com&gt;
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
