@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ba620659b41cdafe390c4d5aac29c6ed",
+    "content-hash": "b03f00c299651eaf91ac368f760179d2",
     "packages": [
         {
             "name": "cwf-php/cwf-php",
-            "version": "0.83.1",
+            "version": "0.84.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mhlbocian/cwf-php.git",
-                "reference": "f28098ccb70d94980fdba0063a78dd8832544f56"
+                "reference": "6c97714c507ef9cccc735ee140f989cc30610cfa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mhlbocian/cwf-php/zipball/f28098ccb70d94980fdba0063a78dd8832544f56",
-                "reference": "f28098ccb70d94980fdba0063a78dd8832544f56",
+                "url": "https://api.github.com/repos/mhlbocian/cwf-php/zipball/6c97714c507ef9cccc735ee140f989cc30610cfa",
+                "reference": "6c97714c507ef9cccc735ee140f989cc30610cfa",
                 "shasum": ""
             },
             "require": {
@@ -54,9 +54,9 @@
             ],
             "support": {
                 "issues": "https://github.com/mhlbocian/cwf-php/issues",
-                "source": "https://github.com/mhlbocian/cwf-php/tree/0.83.1"
+                "source": "https://github.com/mhlbocian/cwf-php/tree/0.84.0"
             },
-            "time": "2025-04-27T13:13:14+00:00"
+            "time": "2025-04-27T19:12:31+00:00"
         }
     ],
     "packages-dev": [],

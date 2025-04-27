@@ -29,7 +29,7 @@ You can change theese parameters:
 </ul>
 
 <p>
-    Remember, to check your <code>namespace</code> key to fit it, to your project
+    ⚠️ Remember, to check your <code>namespace</code> key to fit it, to your project
     namespace.
 </p>
 

@@ -27,7 +27,7 @@ class Sitemap {
             "Configuration" => "Auth_Configuration",
             "Database driver" => "Auth_DriverDb",
             "JSON driver" => "Auth_DriverJson",
-            "Custom driver" => "Auth_CustomDrivers"
+            "Custom driver" => "Auth_DriverCustom"
         ],
         "Configuration" => [
             "Creating files" => "Config_CreateFile",

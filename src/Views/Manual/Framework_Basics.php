@@ -136,7 +136,7 @@ highlight_string($code);
     Run the PHP development server by typing:
 </p>
 <pre>
-~/your-project$ php -S localhost:8000 -t src/Public
+$ php -S localhost:8000 -t src/Public
 </pre>
 <p>
     When you enter <code>http://localhost:8000/index.php/Main/Index</code> or

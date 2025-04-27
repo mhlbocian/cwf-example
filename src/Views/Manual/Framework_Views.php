@@ -7,7 +7,7 @@
 </p>
 
 <p>
-    Remember to bind your view variables from the controller's level. It is
+    ⚠️ Remember to bind your view variables from the controller's level. It is
     possible to embed other PHP code inside the view, however it is not a good
     practice, due to separation of the data and the presentation layer. Views
     can be also nested and the files can be located in the subdirectories.
@@ -32,7 +32,7 @@
 
 &lt;?php foreach ($posts as $post): ?&gt;
     &lt;article&gt;
-        &lt;p&gt;Author: &lt;?= $post["author"] ?&gt; (&lt;?= $date ?&gt;)&lt;/p&gt;
+        &lt;p&gt;Author: &lt;?= $post["author"] ?&gt; (&lt;?= $post["date"] ?&gt;)&lt;/p&gt;
         &lt;h3&gt; &lt;?= $post["title"] ?&gt; &lt;/h3&gt;
         &lt;p&gt; &lt;?= $post["content"] ?&gt; &lt;/p&gt;
         &lt;hr /&gt;
