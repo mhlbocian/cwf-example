@@ -1,5 +1,5 @@
 <?php use CwfPhp\CwfPhp\Url; ?>
-<div style="width: 25%; float: left;">
+<div style="width: 25%; float: left; overflow: auto;">
     <h3>Framework manual</h3>
     <ul style="list-style: none; padding-left: 0;">
         <?php foreach ($menu as $section => $subpages): ?>
@@ -23,7 +23,7 @@
         <?php endforeach; ?>
     </ul>
 </div>
-<div style="width: 75%; float: right;">
+<div style="width: 75%; float: right; overflow: auto;">
     <?php if (is_null($content)): ?>
         <p>Please select the subpage from the menu on the left side.</p>
     <?php else: ?>

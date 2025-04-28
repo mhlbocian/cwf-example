@@ -1,7 +1,7 @@
 <p>
     Json driver uses the CWF-PHP Json backend. The files are stored in the
     <code>Data</code> directory. This driver uses 2 files for storing information
-    about users and groups. Memberships data is stored in theese files.
+    about users and groups. Memberships data is stored in both files.
 </p>
 
 <pre>

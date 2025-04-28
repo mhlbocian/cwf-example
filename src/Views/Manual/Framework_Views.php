@@ -1,6 +1,6 @@
 <p>
     CWF-PHP provides support for views. Views are standard php files, where you
-    can mix PHP code with html. It is recommended to use alternative syntax for
+    can mix PHP code with HTML. It is recommended to use alternative syntax for
     the control structures, and the short syntax <code>&lt;?= $var ?&gt;</code>.
     Views are stored in the <code>Views</code> directory, and must have the
     <code>.php</code> extension.

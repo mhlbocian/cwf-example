@@ -1,5 +1,5 @@
 <h3>License</h3>
-<pre>
+<pre style="overflow: auto;">
 Copyright 2025 Michal Bocian &lt;bocian.michal@outlook.com&gt;
 
 Redistribution and use in source and binary forms, with or without modification,

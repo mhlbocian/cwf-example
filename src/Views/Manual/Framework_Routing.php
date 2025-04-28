@@ -1,6 +1,6 @@
 <p>
     When the <code>index.php</code> file is accessed via http, the <code>PATH_INFO</code>
-    data is transferred into <code>Framework\Router</code> object. <code>PATH_INFO</code>
+    data is transferred into <code>Router</code> object. <code>PATH_INFO</code>
     value is the string after slash at the end of <code>index.php</code>. For
     example: <code>index.php/controller/action/arg1/arg2...</code>. If no
     <code>PATH_INFO</code> is provided, default action in default controller is
