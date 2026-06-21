@@ -1,20 +1,5 @@
 {
-    "application": {
-        "name": "CWF-PHP",
-        "description": "Example application",
-        "version": "0.84.0"
-    },
-    "router": {
-        "namespace": "Mhlbocian\\CwfExample\\Controllers",
-        "default_controller": "Main",
-        "default_action": "Index"
-    },
-    "url": {
-        "protocol": "http",
-        "host": "localhost",
-        "port": 8000,
-        "path": "/",
-        "index": "index.php",
-        "omit_index": false
-    }
+    "name": "CWF-PHP",
+    "description": "Example application",
+    "version": "dev-main"
 }

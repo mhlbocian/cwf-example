@@ -1,0 +1,5 @@
+{
+    "namespace": "Mhlbocian\\CwfExample\\Controllers",
+    "default_controller": "Main",
+    "default_action": "Index"
+}

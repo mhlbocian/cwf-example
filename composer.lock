@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b03f00c299651eaf91ac368f760179d2",
+    "content-hash": "551f26b13ac340b2895719a41d8c1a9c",
     "packages": [
         {
             "name": "cwf-php/cwf-php",
-            "version": "0.84.0",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mhlbocian/cwf-php.git",
-                "reference": "6c97714c507ef9cccc735ee140f989cc30610cfa"
+                "reference": "41842a266ca5b0f49a3c933a9f58c82a3d907adb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mhlbocian/cwf-php/zipball/6c97714c507ef9cccc735ee140f989cc30610cfa",
-                "reference": "6c97714c507ef9cccc735ee140f989cc30610cfa",
+                "url": "https://api.github.com/repos/mhlbocian/cwf-php/zipball/41842a266ca5b0f49a3c933a9f58c82a3d907adb",
+                "reference": "41842a266ca5b0f49a3c933a9f58c82a3d907adb",
                 "shasum": ""
             },
             "require": {
@@ -27,6 +27,7 @@
                 "ext-session": "*",
                 "php": ">=8.4"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -54,18 +55,20 @@
             ],
             "support": {
                 "issues": "https://github.com/mhlbocian/cwf-php/issues",
-                "source": "https://github.com/mhlbocian/cwf-php/tree/0.84.0"
+                "source": "https://github.com/mhlbocian/cwf-php/tree/main"
             },
-            "time": "2025-04-27T19:12:31+00:00"
+            "time": "2026-06-21T10:51:43+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": {
+        "cwf-php/cwf-php": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }

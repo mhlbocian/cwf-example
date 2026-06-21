@@ -16,6 +16,6 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "cwf-php/cwf-php": "^0.84"
+        "cwf-php/cwf-php": "dev-main"
     }
 }

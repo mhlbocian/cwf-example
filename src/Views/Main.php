@@ -37,9 +37,9 @@
             </section>
             <hr />
             <footer>
-                &copy; <?= date("Y") ?> <?= $app["name"] ?>
-                <i>(<?= $app["description"] ?>)</i> ver. <?= $app["version"] ?>
-                &bullet; visit:
+                &copy; 2025-<?= date("Y") ?> Michał Bocian &bull; <?= $app["name"] ?>
+                <i>(<?= $app["description"] ?>)</i> &bull; ver. <?= $app["version"] ?>
+                &bull; visit:
                 <a href="https://github.com/mhlbocian/cwf-php" target="_blank">github</a>
             </footer>
         </div>

@@ -1,0 +1,8 @@
+{
+    "protocol": "http",
+    "host": "localhost",
+    "port": 8000,
+    "path": "/",
+    "index": "index.php",
+    "omit_index": false
+}
