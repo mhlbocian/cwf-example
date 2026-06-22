@@ -17,7 +17,7 @@ class Main {
         $menu = Sitemap::MainMenu(Router::Get_Route());
         $this->main = new View("Main"); 
 
-        $this->main->Bind("app", Config::File("application")->Fetch());
+        $this->main->Bind("app", Config::Json("application")->Fetch());
         $this->main->Bind("title", Sitemap::Title(Router::Get_Route()));
 
         if (Auth::Instance()->IsLogged()) {
