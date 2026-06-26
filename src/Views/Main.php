@@ -32,6 +32,9 @@
                 </ul>
             </nav>
             <hr />
+            <section style="text-align: center; color: red;">
+                <strong>Warning! Due to API changes the manual is outdated.</strong>
+            </section>
             <section>
                 <?= $content ?? "<p>No content.</p>" ?>
             </section>
