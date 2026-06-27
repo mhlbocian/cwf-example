@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mhlbocian/cwf-php.git",
-                "reference": "7be05ab933004f1dd980979f03600b6ba7e0a99b"
+                "reference": "6194f0f6ae8c9de6135da307ea1b2775bc572bec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mhlbocian/cwf-php/zipball/7be05ab933004f1dd980979f03600b6ba7e0a99b",
-                "reference": "7be05ab933004f1dd980979f03600b6ba7e0a99b",
+                "url": "https://api.github.com/repos/mhlbocian/cwf-php/zipball/6194f0f6ae8c9de6135da307ea1b2775bc572bec",
+                "reference": "6194f0f6ae8c9de6135da307ea1b2775bc572bec",
                 "shasum": ""
             },
             "require": {
@@ -57,7 +57,7 @@
                 "issues": "https://github.com/mhlbocian/cwf-php/issues",
                 "source": "https://github.com/mhlbocian/cwf-php/tree/main"
             },
-            "time": "2026-06-26T17:53:17+00:00"
+            "time": "2026-06-27T14:42:22+00:00"
         }
     ],
     "packages-dev": [],

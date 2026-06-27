@@ -14,11 +14,12 @@ class Main {
     private View $main;
 
     public function __construct() {
-        $menu = Sitemap::MainMenu(Router::Get_Route());
-        $this->main = new View("Main"); 
+        $route = "/" . Router::Get_Args(true)[0] . "/" . Router::Get_Args(true)[1];
+        $menu = Sitemap::MainMenu($route);
+        $this->main = new View("Main");
 
         $this->main->Bind("app", Config::Json("application")->Fetch());
-        $this->main->Bind("title", Sitemap::Title(Router::Get_Route()));
+        $this->main->Bind("title", Sitemap::Title($route));
 
         if (Auth::Instance()->IsLogged()) {
             // replace `Sign In` in menu array with `Logout {$user}`
@@ -31,7 +32,7 @@ class Main {
 
         $this->main->Bind("menu", $menu);
     }
-    
+
     public function Auth(): void {
         $view = new View("Main/Auth");
 

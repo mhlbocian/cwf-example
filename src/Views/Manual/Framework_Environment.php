@@ -7,8 +7,8 @@
 
 <ul>
     <li><code>DS</code> - directory separator - <code><?= DS ?></code></li>
-    <li><code>CWFDIR</code> - framework directory - <code><?= CWFDIR ?></code></li>
-    <li><code>APPDIR</code> - application directory - <code><?= APPDIR ?></code></li>
-    <li><code>CFGDIR</code> - configuration directory - <code><?= CFGDIR ?></code></li>
-    <li><code>DATADIR</code> - data directory - <code><?= DATADIR ?></code></li>
+    <li><code>CWF_ROOT</code> - framework directory - <code><?= CWF_ROOT ?></code></li>
+    <li><code>APP_ROOT</code> - application directory - <code><?= APP_ROOT ?></code></li>
+    <li><code>APP_CFG</code> - configuration directory - <code><?= APP_CFG ?></code></li>
+    <li><code>APP_DATA</code> - data directory - <code><?= APP_DATA ?></code></li>
 </ul>
